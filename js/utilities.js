@@ -2,8 +2,8 @@ function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
   const inputFieldValue = parseFloat(inputFieldValueString);
-  return inputFieldValue;
   inputField.value = "";
+  return inputFieldValue;
 }
 
 function getTextElementValueById(elementId) {
@@ -15,5 +15,5 @@ function getTextElementValueById(elementId) {
 
 function setTextElementValueById(elementId, newValue) {
   const textElement = document.getElementById(elementId);
-  textElement.value = newValue;
+  textElement.innerText = newValue;
 }
